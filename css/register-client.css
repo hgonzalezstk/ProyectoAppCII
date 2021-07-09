@@ -1,0 +1,124 @@
+/* Colors
+Orange: 255,78,0
+Yellow: 236,159,5
+Grey: 241,242,246
+Blue: 84,81,253
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgba(255, 78, 0), rgba(236, 159, 5));
+    /* background-color: rgba(84, 81, 253); */
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.container-primary {
+    background-color: #222;
+    border-radius: 15px;
+    height: 550px;
+    width: 400px;
+    position: relative;
+    /* propiedad especifica si recortar el contenido o agregar barras de desplazamiento */
+    overflow: hidden;
+}
+
+.container-primary::after {
+    /* La contentpropiedad se usa con los pseudoelementos :: before y :: after , para insertar contenido generado */
+    content: '';
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 600px;
+    background-image: url('https://images.unsplash.com/photo-1556742517-fde6c2abbe11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+}
+
+.registro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* propiedad CSS permite a los autores web transformar un elemento en un espacio bidimensional (2D) o tridimensional (3D) */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 85%;
+    z-index: 5;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.register-client {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form-holder {
+    border-radius: 15px;
+    background-color: #fff;
+    /* propiedad especifica si recortar el contenido o agregar barras de desplazamiento */
+    overflow: hidden;
+    margin-top: 50px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.input {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    height: 50px;
+    line-height: 30px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn-registro {
+    background-color: rgba(84, 81, 253);
+    color: rgba(256, 256, 256, 0.7);
+    border: 0;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+    padding: 15px 45px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-registro:hover {
+    transition: all .3s ease;
+    background-color: rgba(255, 78, 0);
+}
+
+
+/* PARA VALIDACIONES GENERALES */
+
+.error-input {
+    border-bottom: 1px solid rgb(228, 20, 20);
+    border-radius: 10px;
+}
