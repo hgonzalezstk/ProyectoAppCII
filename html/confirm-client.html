@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Registro</title>
+    <link rel="stylesheet" href="../css/confirm-client.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <!-- Header principal -->
+    <header>
+
+    </header>
+    <!-- Contenedor principal -->
+    <main>
+        <div class="container-primary-confirm">
+            <div class="confirm-register">
+                <h1>Completa tu cuenta en ReZervo</h1>
+                <div class="form-holder">
+                    <input type="text" class="input" id="txt-token" placeholder="Token de verificación" required>
+                    <hr>
+                    <hr>
+                    <input type="text" class="input" id="txt-identificacion" placeholder="Identificación" required>
+                    <input type="password" class="input" id="txt-contrasenna" placeholder="Contraseña" required>
+                    <!-- <input type="file" class="file-avatar" id="file-avatar" placeholder="Contraseña" required> -->
+                    <div class="file-upload">
+                        <button class="file-upload-btn" type="button" onclick="cargarFoto()">Subir Foto</button>
+                    </div>
+                </div>
+                <input class="btn-confirm" type="button" name="btn-confirm" id="btn-confirm" value="¡Crear cuenta!">
+            </div>
+
+    </main>
+
+    <footer>
+        <!-- Footer -->
+    </footer>
+    <script src="../js/confirm-client.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

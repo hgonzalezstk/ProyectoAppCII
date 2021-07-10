@@ -62,7 +62,8 @@ h1 {
     transform: translate(-50%, -50%);
     width: 85%;
     z-index: 5;
-    -webkit-transition: all .3s ease;
+    /* -webkit-transition: all .3s ease; --Safari */
+    /* especifica un efecto de transición con un inicio lento, luego rápido, luego termina lentamente (esto es predeterminado) */
     transition: all .3s ease;
 }
 

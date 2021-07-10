@@ -19,7 +19,8 @@ html {
     position: fixed;
     width: 200px;
     height: 100%;
-    background: rgba(255, 78, 0);
+    background-image: linear-gradient(to bottom right, rgba(255, 78, 0), rgba(236, 159, 5));
+    /* background: rgba(255, 78, 0); */
     /* left: -200px; */
     transition: all 500ms linear;
 }
