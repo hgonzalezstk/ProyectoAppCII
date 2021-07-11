@@ -133,11 +133,6 @@ a:hover {
     ;
 }
 
-.block-avatar {
-    /* margin: 0;
-    padding: 0; */
-}
-
 .block-avatar img {
     position: static;
     width: 250px;
