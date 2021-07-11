@@ -4,8 +4,22 @@
 const txtToken = document.querySelector('#txt-token');
 const txtIdentificacion = document.querySelector("#txt-identificacion");
 const txtContrasenna = document.querySelector('#txt-contrasenna');
+const uploadAvatar = document.querySelector('#file');
+
 
 const botonCrear = document.querySelector('#btn-confirm');
+
+
+document.querySelector('#file').addEventListener('change', function() {
+    const reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+        localStorage.setItem('avatar-profile', reader.result);
+    })
+
+    reader.readAsDataURL(this.files[0]);
+})
+
 
 const limpiar = () => {
     txtToken.value = "";
@@ -88,27 +102,8 @@ const almacenarDatos = () => {
     localStorage.setItem('contrasenna', txtContrasenna.value);
 }
 
-async function cargarFoto() {
-    const { value: file } = await Swal.fire({
-        title: 'Select image',
-        input: 'file',
-        inputAttributes: {
-            'accept': 'image/*',
-            'aria-label': 'Upload your profile picture'
-        }
-    })
 
-    if (file) {
-        const reader = new FileReader()
-        reader.onload = (e) => {
-            Swal.fire({
-                title: 'Your uploaded picture',
-                imageUrl: e.target.result,
-                imageAlt: 'The uploaded picture'
-            })
-        }
-        reader.readAsDataURL(file)
-    }
-}
+
+
 
 botonCrear.addEventListener('click', validarDatos);

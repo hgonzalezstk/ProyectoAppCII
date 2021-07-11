@@ -133,6 +133,18 @@ a:hover {
     ;
 }
 
+.block-avatar {
+    /* margin: 0;
+    padding: 0; */
+}
+
+.block-avatar img {
+    position: static;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+}
+
 
 /* Use a media query to add a break point at 800px: */
 
