@@ -3,10 +3,10 @@
 /Hilario/css/generales.css
 /Hilario/html/pnl_clientes.html
 
-/Hilario/html/payment-method.html
-/Hilario/css/payment-method.css
-/Hilario/js/payment-method.js
+# /Hilario/html/payment-method.html
+# /Hilario/css/payment-method.css
+# /Hilario/js/payment-method.js
 
-/Hilario/html/list-clients.html
-/Hilario/css/list-clients.css
-/Hilario/js/list-clients.js
+# /Hilario/html/list-clients.html
+# /Hilario/css/list-clients.css
+# /Hilario/js/list-clients.js

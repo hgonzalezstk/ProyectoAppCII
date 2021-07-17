@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Pago </title>
+    <link rel="stylesheet" href="../css/payment-method.css">
+    <script src="https://kit.fontawesome.com/c807f12612.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu-block">
+        <section id="sidebar-menu">
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="block-avatar">
+                                <img src="" alt="" id="avatar-logo">
+                            </div>
+                            <li>
+                                <a href="">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="profile-client.html"><i class="fas fa-user nav-icon"></i> Perfil</a>
+                            </li>
+                            <li>
+                                <a href="">Crear reserva</a>
+                            </li>
+                            <li>
+                                <a href="payment-method.html">Métodos de pago</a>
+                            </li>
+                            <li>
+                                <a href="">Restaurantes favoritos</a>
+                            </li>
+                    </ul>
+                    <img src="../media/imgs/logo.png" alt="logo" class="logo">
+                </nav>
+            </div>
+    </div>
+
+    <div class="main">
+        <section class="sct-contenedor-principal">
+            <div class="div-container">
+                <form>
+                    <h1 class="title">Métodos de pago</h1>
+                    <div>
+                        <div>
+                            <label for="sel-tarjeta" class="label">Tipo de tarjeta:</label>
+                            <select name="sel-tarjeta" class="input" id="sel-tarjeta" required>
+                        <option value="visa">VISA</option>
+                        <option value="mastercard">MASTERCARD</option>
+                        <option value="american-express">AMERICAN EXPRESS</option>
+                      </select>
+                            <div>
+                                <label for="txt-numero-tarjeta" class="label">Número de tarjeta:</label>
+                                <input type="text" class="input" id="txt-numero-tarjeta" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="txt-titular" class="label">Nombre del titular:</label>
+                            <input type="text" class="input" id="txt-titular" required>
+                        </div>
+                        <div>
+                            <label for="txt-fecha-vencimiento" class="label">Fecha de expiración:</label>
+                            <input type="date" class="input" id="txt-fecha-vencimiento" required>
+                        </div>
+                        <div>
+                            <label for="txt-codigo-cvc" class="label">Código seguridad (CVC):</label>
+                            <input type="text" class="input" id="txt-codigo-cvc" required>
+                        </div>
+                        <!-- <div class="sct-boton">
+                            <button type="button" id="btn-enviar">Enviar</button>
+                        </div> -->
+                    </div>
+                </form>
+
+            </div>
+            <input class="btn-actualizar" type="button" name="btn-guardar" id="btn-guardar" value="Agregar">
+        </section>
+    </div>
+    <div class="redes-block">
+        <div id="tabla">
+            <table id="tbl-tarjetas" class="tbl-tarjetas">
+                <thead>
+                    <tr>
+                        <th class="col-id">ID</th>
+                        <th class="col-adicional">Tipo</th>
+                        <th class="col-adicional">Tarjeta</th>
+                        <th class="col-adicional">Titular</th>
+                        <th class="col-adicional">Vencimiento</th>
+                        <th class="col-adicional">Código</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/payment-method.js"></script>
+</body>
+
+</html>
