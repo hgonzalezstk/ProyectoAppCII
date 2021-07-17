@@ -110,7 +110,6 @@ const validarDatos = () => {
         //si no hubo error. continue el proceso
         almacenarDatos();
         registrarDatosCliente();
-
     }
     limpiar();
 }
