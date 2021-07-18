@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-buscador {
+    margin: 0;
+    padding: 30px;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    border: 1px solid rgb(84, 81, 253);
+    background-color: rgb(241, 242, 246);
+    margin-top: 250px;
+}
+
+.h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+#lista {
+    font-size: 1.5em;
+    margin-left: 90px;
+}

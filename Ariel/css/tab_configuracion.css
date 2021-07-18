@@ -1,0 +1,29 @@
+  h2 {
+      margin: 0;
+      display: inline-block;
+  }
+  
+  h1 {
+      font-size: 40px;
+      font-family: Helvetica;
+  }
+  
+  button {
+      background: orange;
+      padding: 5px;
+      float: right;
+  }
+  
+  .tab-configuracion {
+      width: 1100px;
+      background: rgb(241, 242, 246);
+      padding: 30px;
+      margin: auto;
+      margin-top: 100px;
+      margin-left: 7cm;
+      border-radius: 4px;
+      font-family: Helvetica;
+      color: black;
+      float: left;
+      font-size: 21px;
+  }
