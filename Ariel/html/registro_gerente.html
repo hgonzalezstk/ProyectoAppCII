@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de gerente</title>
+
+    <link rel="stylesheet" href="/paginaweb/css/registro_gerente.css">
+
+</head>
+
+<body>
+
+    <form class="form-registro">
+
+        <h1>Regístrese como gerente</h1>
+
+        <br/>
+        <br/>
+
+        <div>
+            <label for="txt-nombre">Nombre</label>
+            <input type="text" id="txt-nombre">
+        </div>
+
+        <br/>
+
+        <div>
+            <label for="txt-apellidos">Apellidos</label>
+            <input type="text" id="txt-apellidos">
+        </div>
+
+        <br/>
+
+        <div>
+            <label for="txt-restaurante">Restaurante</label>
+            <input type="text" id="txt-restaurante">
+        </div>
+
+        <br/>
+
+        <div>
+            <label for="txt-telefono">Teléfono:</label>
+            <input type="tel" id="txt-telefono" required>
+        </div>
+
+        <br/>
+
+        <div>
+            <label type="checkbox" name="lenguaje" value="terminos y condiciones">Acepto los términos y condiciones
+            <input type="checkbox" id="checkbox" required>
+
+        </div>
+
+        <br/>
+
+        <div>
+            <button type="button" onclick="registration()">Registrarse</button>
+        </div>
+
+        <br/>
+
+        <div>
+            <p>¿Ya tiene una cuenta registrada?</p>
+            <p>Inicie sesión <a href="#">aquí</a></p>
+        </div>
+
+
+
+    </form>
+
+    <div class="img-container"></div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/registro_gerente.js"></script>
+
+
+</body>
+
+</html>

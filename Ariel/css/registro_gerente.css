@@ -1,0 +1,54 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .form-registro {
+            width: 500px;
+            background: rgb(241, 242, 246);
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            margin-left: 7cm;
+            border-radius: 4px;
+            font-family: Helvetica;
+            color: black;
+            float: left;
+        }
+        
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: Helvetica;
+        }
+        
+        input {
+            width: 100%;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid rgb(84, 81, 253);
+            font-family: Helvetica;
+            font-size: 18px;
+        }
+        
+        label {
+            font-size: 20px;
+        }
+        
+        button {
+            width: 30%;
+            font-size: 18px;
+        }
+        
+        .img-container {
+            background-image: url('../imgs/manager_restaurante.jpg');
+            background-size: cover;
+            height: 90vh;
+            width: 40%;
+            float: right;
+            margin-right: 2cm;
+        }
