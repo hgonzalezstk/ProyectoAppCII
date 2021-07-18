@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro reservación</title>
+    <link rel="stylesheet" href="../css/register-reservation.css">
+</head>
+
+<body>
+    <div class="menu-block">
+        <section id="sidebar-menu">
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="block-avatar">
+                                <img src="" alt="" id="avatar-logo">
+                            </div>
+                            <li>
+                                <a href="#">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="profile-client.html">Perfil</a>
+                            </li>
+                            <li>
+                                <a href="register-reservation.html">Crear reserva</a>
+                            </li>
+                            <li>
+                                <a href="payment-method.html">Métodos de pago</a>
+                            </li>
+                            <li>
+                                <a href="">Restaurantes favoritos</a>
+                            </li>
+                    </ul>
+                    <img src="../media/imgs/logo.png" alt="logo" class="logo">
+                </nav>
+            </div>
+    </div>
+    <div class="main">
+
+        <div id="container-profile">
+            <div>
+                <h1>Registrar reservación</h1>
+            </div>
+            <div class="form-holder">
+                <div>
+                    <label for="txt-fecha" class="label">Fecha:</label>
+                    <input type="date" class="input" id="txt-fecha">
+                </div>
+                <div>
+                    <label for="txt-hora" class="label">Hora:</label>
+                    <input type="datetime" class="input" id="txt-hora">
+                </div>
+                <div>
+                    <label for="txt-cant-personas" class="label">Cantidad de personas:</label>
+                    <input type="number" class="input" id="txt-cant-personas">
+                </div>
+                <div>
+                    <label for="sel-restaurante" class="label">Seleccione un restaurante:</label>
+                    <select name="sel-restaurante" class="input" id="sel-restaurante" required>
+                <option value="uno">Restaurante Uno</option>
+                <option value="dos">Restaurante Dos</option>
+                <option value="tres">restaurante Tres</option>
+              </select>
+                </div>
+            </div>
+            <input class="btn-confirmar" type="button" name="btn-confirmar" id="btn-confirmar" value="Confirmar">
+        </div>
+    </div>
+
+    <!-- <div class="redes-block">
+
+    </div> -->
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../js/profile-client.js"></script>
+</body>
+
+</html>
