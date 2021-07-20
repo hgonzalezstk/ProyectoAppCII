@@ -1,0 +1,194 @@
+#sct-aside aside {
+    max-width: 400px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+
+#sct-aside aside div {
+    text-align: center;
+    margin-top: 75px;
+}
+
+#btn-reserva {
+    color: rgb(255, 255, 255);
+    background-color: rgb(84, 81, 253);
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+    border-style: none;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.info {
+    color: rgb(255, 78, 0);
+    border-radius: 5px;
+    border: solid rgb(236, 159, 5);
+    background-size: cover;
+    background-color: rgb(241, 242, 246);
+    margin: 90px 50px;
+    padding: 90px 50px;
+}
+
+#foto-restaurante {
+    width: 100%;
+    margin-top: 75px;
+}
+
+#foto-gerente {
+    width: 150px;
+}
+
+#info-gerente div {
+    display: flow-root;
+    float: left;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+#info-gerente div p {
+    color: rgb(255, 78, 0);
+    border-radius: 5px;
+    border: solid rgb(236, 159, 5);
+    background-size: cover;
+    background-color: rgb(241, 242, 246);
+    margin-top: 35%;
+    margin-right: 10%;
+    padding: 30px;
+}
+
+#info-gerente {
+    display: flow-root;
+}
+
+#sct-aside aside #social-media .btn-socialMedia {
+    display: flow-root;
+    float: left;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    margin-left: 15%;
+    margin-bottom: 75px;
+}
+
+#sct-aside aside #social-media #img-facebook {
+    background-image: url(../imgs/FB.png);
+    background-size: cover;
+}
+
+#sct-aside aside #social-media #img-instagram {
+    background-image: url(../imgs/Insta.png);
+    background-size: cover;
+}
+
+#sct-aside aside #social-media #img-twitter {
+    background-image: url(../imgs/Twttr.png);
+    background-size: cover;
+}
+
+#social-media {
+    display: flow-root;
+}
+
+#sct-contenedor-titulo {
+    text-align: center;
+    background-image: url(../imgs/restBanner.jpg);
+    background-size: cover;
+    min-height: 200px;
+    background-position: center;
+    padding: 150px;
+}
+
+#sct-contenedor-titulo>div {
+    display: flow-root;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    border-radius: 15px;
+}
+
+h1 {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.calificacion {
+    max-width: 25px;
+}
+
+#sct-contenedor {
+    display: flow-root;
+}
+
+#sct-menus {
+    display: flow-root;
+}
+
+#sct-menus div {
+    float: left;
+    width: 50%;
+    min-height: 400px;
+    max-height: 400px;
+    background-size: cover;
+    background-color: rgb(241, 242, 246);
+}
+
+.btn {
+    text-align: center;
+    padding-top: 170px;
+}
+
+.btn-menu {
+    color: rgb(255, 255, 255);
+    background-color: rgb(84, 81, 253);
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+    border-style: none;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#img-vegetariano {
+    background-image: url(../imgs/menuVegetariano.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-vegano {
+    background-image: url(../imgs/menuVegano.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-bocas {
+    background-image: url(../imgs/menuBocas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-postres {
+    background-image: url(../imgs/menuPostres.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-bebidas {
+    background-image: url(../imgs/menuBebidas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sct-menus {
+    display: flow-root;
+}
+
+#mapa {
+    cursor: pointer;
+}
