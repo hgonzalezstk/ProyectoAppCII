@@ -1,0 +1,124 @@
+#header-landing nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#nav-landing a {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    animation: moverIzquierda 1s ease-in;
+    text-align: right;
+}
+
+.icono {
+    text-align: right;
+}
+
+#header-landing {
+    /* fallback for old browsers */
+    background: rgb(255, 78, 0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(255, 78, 0), rgb(236, 159, 5));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(255, 78, 0), rgb(236, 159, 5));
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.container img {
+    display: block;
+    height: 600px;
+    object-fit: cover;
+    width: auto;
+    animation: arriba 1s ease-in;
+}
+
+.textos {
+    width: 50%;
+    color: white;
+}
+
+.textos h1 {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2 {
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a {
+    font-family: Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid white;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+}
+
+.wave {
+    height: 100px;
+    width: 100%;
+    /* fallback for old browsers */
+    background: rgb(255, 78, 0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(255, 78, 0), rgb(236, 159, 5));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(255, 78, 0), rgb(236, 159, 5));
+}
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
