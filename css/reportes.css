@@ -1,0 +1,98 @@
+#sct-rep-ganancias h1 {
+    padding: 45px;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.buscar-reportes {
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.buscar-reportes label {
+    padding-right: 10px;
+}
+
+#myInput {
+    background-image: url('../imgs/searchIcon.png');
+    background-size: 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+.tabla-reportes {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.tabla-reportes,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.tabla-reportes th {
+    background-color: rgba(84, 81, 253, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+.tabla-reportes th:hover {
+    background-color: rgba(84, 81, 253);
+    color: rgb(255, 255, 255);
+}
+
+.tabla-reportes th,
+td {
+    padding: 15px;
+    text-align: center;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.tabla-reportes tr:nth-child(even) {
+    background-color: rgb(187, 187, 187);
+}
+
+.btns-AS {
+    display: flex;
+    justify-content: center;
+}
+
+.btns-AS a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 20px 2px 20px 2px;
+}
+
+.rep-previous {
+    background-color: rgb(84, 81, 253);
+    color: rgb(255, 255, 255);
+}
+
+.rep-previous:hover {
+    background-color: rgb(241, 242, 246);
+    color: black;
+}
+
+.rep-next {
+    background-color: rgb(84, 81, 253);
+    color: rgb(255, 255, 255);
+}
+
+.rep-next:hover {
+    background-color: rgb(241, 242, 246);
+    color: black;
+}

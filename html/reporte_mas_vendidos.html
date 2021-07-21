@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de platillos más vendidos | Rezervo</title>
+    <link rel="icon" href="../media/imgs/rezervoIcono.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../css/import.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <header>
+        <div id="navbar">
+            <a href="#" class="hamb-menu" id="show-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <img src="../media/imgs/rezervoBlanco.png">
+
+        </div>
+        <nav id="nav-menu">
+            <ul class="nav-menu-items">
+                <div id="navbar-toggle">
+                    <a href="#" class="hamb-menu" id="hide-menu">
+                        <i class="fas fa-bars nav-icon"></i>
+                    </a>
+                    <a href="landing_page.html">
+                        <img src="../media/imgs/rezervoBlanco.png">
+                    </a>
+                </div>
+                <hr />
+                <!--PRIMERA PARTE DEL NAV (LINKS)-->
+                <div class="sct-nav">
+                    <!--PRIMER LINK-->
+                    <li class="nav-text"><a href="pnl_login.html"><i class="fas fa-sign-in-alt nav-icon"></i>Iniciar sesión</a></li>
+                    <!--SEGUNDO LINK-->
+                    <li class="nav-text"><a href="#"><i class="fas fa-user nav-icon"></i>Perfil</a></li>
+                    <!--TERCER LINK-->
+                    <li class="nav-text"><a href="#"><i class="fas fa-utensils nav-icon"></i> Restaurantes</a></li>
+                </div>
+                <hr/>
+                <!--SEGUNDA PARTE DEL NAV (LINKS)-->
+                <div class="sct-nav">
+                    <!--CUARTO LINK-->
+                    <li class="nav-text"><a href="#"><i class="fas fa-handshake nav-icon"></i>Registro</a></li>
+                    <!--QUINTO LINK-->
+                    <li class="nav-text"><a href="#"><i class="fa fa-comment nav-icon"></i>Contacto</a></li>
+                    <!--SEXTO LINK-->
+                    <li class="nav-text"><a href="#"><i class="fas fa-sign-out-alt nav-icon"></i>Cerrar Sesión</a></li>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section id="sct-rep-ganancias">
+            <h1>Reporte de platillos más vendidos</h1>
+        </section>
+        <section class="buscar-reportes">
+            <label>Buscar:</label>
+            <input type="text" id="myInput" onkeyup="myFunction()" title="Type in a name">
+        </section>
+
+        <section>
+            <table class="tabla-reportes">
+                <caption>Ordenar por:</caption>
+                <tr>
+
+                    <th id="vendidos-num" onclick="sortTable(1)"></th>
+                    <th id="vendidos-platillo" onclick="sortTable(2)">Platillo</th>
+                    <th id="vendidos-cantidad" onclick="sortTable(3)">Cantidad</th>
+                    <th id="vendidos-ganancias" onclick="sortTable(4)">Ganancias</th>
+                </tr>
+                <tr>
+
+                    <td>1</td>
+                    <td>Combo 2</td>
+                    <td>76</td>
+                    <td>₡50,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>2</td>
+                    <td>Combo 1</td>
+                    <td>72</td>
+                    <td>₡47,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>3</td>
+                    <td>Combo 4</td>
+                    <td>67</td>
+                    <td>₡40,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>4</td>
+                    <td>Combo 5</td>
+                    <td>64</td>
+                    <td>₡38,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>5</td>
+                    <td>Sundae</td>
+                    <td>44</td>
+                    <td>₡30,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>6</td>
+                    <td>Combo 3</td>
+                    <td>42</td>
+                    <td>₡27,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>7</td>
+                    <td>Combo 8</td>
+                    <td>21</td>
+                    <td>₡22,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>8</td>
+                    <td>Cerveza</td>
+                    <td>19</td>
+                    <td>₡19,000.00</td>
+                </tr>
+                <tr>
+
+                    <td>9</td>
+                    <td>Combo 6</td>
+                    <td>9</td>
+                    <td>₡8,000.00</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <div class="btns-AS">
+                <a href="#" class="rep-previous">&laquo; Anterior</a>
+                <a href="#" class="rep-next">Siguiente &raquo;</a>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer class="footer-principal">
+        <img id="logo-footer" src="../media/imgs/qgato-blanco.png" alt="q'Gato Studio blanco">
+        <address>San José, Costa Rica</address>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/reportes.js"></script>
+
+</body>
+
+</html>
