@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel de dueños</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/general-media-query.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/pnlVegetariano.css">
+</head>
+
+<body>
+    <header id="header-principal" class="header-principal">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ubicaciones.html">Buscar restaurante</a>
+            <a href="reservaciones.html">Iniciar Sesión</a>
+            <a href="contacto.html">Registrarse</a>
+            <a href="inicio-sesion.html">Recuperar Contraseña</a>
+            <a href="contacto.html">FAQ</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section>
+            <h1>Panel de control de menú vegetariano</h1>
+        </section>
+        <section id="sct-buscar">
+            <label for="myInput">Buscar:</label>
+            <input type="text" id="myInput" onkeyup="buscar()">
+        </section>
+        <section>
+            <section id="sct-aside">
+                <aside>
+                    <div id="foto-restaurante">
+                        <img src="../imgs/vegetariano.jpg" width="150" alt="favicon">
+                    </div>
+                    <div><button type="button" id="btn-Editar">Editar</button></div>
+                </aside>
+            </section>
+            <section>
+                <table id="myTable">
+                    <caption>Ordenar:</caption>
+                    <tr>
+                        <th onclick="sortTable(0)">Características</th>
+                    </tr>
+                    <tr>
+                        <td>Lácteo</td>
+                    </tr>
+                    <tr>
+                        <td>Huevo</td>
+                    </tr>
+                    <tr>
+                        <td>Cereal</td>
+                    </tr>
+                    <tr>
+                        <td>Legumbre</td>
+                    </tr>
+                    <tr>
+                        <td>Hongo</td>
+                    </tr>
+                    <tr>
+                        <td>Fruta</td>
+                    </tr>
+                    <tr>
+                        <td>Verdura</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <div id="btns-AS">
+                    <a href="#" id="previous" class="btn-as">&laquo; Anterior</a>
+                    <a href="#" id="next" class="btn-as">Siguiente &raquo;</a>
+                </div>
+
+            </section>
+    </main>
+    <footer class="footer-principal">
+        <img id="logo-footer" src="../imgs/logo-blanco.png" alt="q'Gato Studio blanco">
+        <address>San José, Costa Rica</address>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/pnlVegetariano.js"></script>
+    <script src="../js/controlador-general.js"></script>
+</body>
+
+</html>
