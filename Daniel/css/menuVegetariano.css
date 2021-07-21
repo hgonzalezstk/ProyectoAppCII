@@ -1,0 +1,129 @@
+h1 {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: black;
+    font-size: 17px;
+    margin: 20px 0px;
+}
+
+#sct-contenedor-titulo {
+    text-align: center;
+    background-image: url(../imgs/headerVege.jpg);
+    background-size: cover;
+    min-height: 250px;
+    background-position: center;
+    padding: 100px;
+}
+
+#sct-contenedor-titulo>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    border-radius: 50px;
+    border: 1px black solid;
+}
+
+#sct-aside aside {
+    max-width: 400px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+
+#sct-aside aside div {
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+#sct-contenedor {
+    display: flow-root;
+}
+
+#sct-menus {
+    display: flow-root;
+}
+
+#sct-menu div {
+    float: left;
+    width: 50%;
+    min-height: 600px;
+    max-height: 600px;
+    background-size: cover;
+    background-color: rgb(241, 242, 246);
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+.div h2 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 40%;
+    margin: 270px auto;
+    padding: 20px 0px;
+    border-radius: 50px;
+    border: 1px black solid;
+}
+
+.btn {
+    display: flow-root;
+    float: left;
+    text-align: center;
+}
+
+.btn-menu {
+    color: rgb(255, 255, 255);
+    background-color: rgb(84, 81, 253);
+    border: solid 1px black;
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btn-menu:hover {
+    background-color: rgb(241, 242, 246);
+    color: black;
+    border: solid 1px black;
+}
+
+#desayuno {
+    background-image: url(../imgs/desayunoVege.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#almuerzo {
+    background-image: url(../imgs/almuerzoVege.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#cena {
+    background-image: url(../imgs/cenaVege.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bocadillos {
+    background-image: url(../imgs/bocadilloVege.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sct-menu {
+    display: flow-root;
+}
