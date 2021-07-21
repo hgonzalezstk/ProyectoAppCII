@@ -1,0 +1,155 @@
+/* Colors
+Orange: 255,78,0
+Yellow: 236,159,5
+Grey: 241,242,246
+Blue: 84,81,253
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+.menu-block {
+    background-color: rgba(255, 78, 0);
+    padding: 0px;
+    float: left;
+    width: 20%;
+    /* The width is 20%, by default */
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(84, 81, 253);
+}
+
+#sidebar-menu ul li {
+    color: rgba(255, 255, 255);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.main {
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    align-self: start;
+    width: 80%;
+    /* The width is 60%, by default */
+}
+
+.form-holder {
+    border-radius: 5px;
+    /* background-color: rgb(84, 81, 253); */
+    /* propiedad especifica si recortar el contenido o agregar barras de desplazamiento */
+    overflow: hidden;
+    margin-top: 50px;
+    /* opacity: 1; */
+    visibility: visible;
+}
+
+.input {
+    margin-bottom: 15px;
+    padding-top: 10px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    height: 50px;
+    line-height: 30px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    font-size: 14px;
+    background-color: rgba(241, 242, 246);
+}
+
+.input:disabled {
+    background: #ccc;
+}
+
+.label {
+    color: rgb(84, 81, 253);
+    padding-top: 30px;
+}
+
+.btn-confirmar {
+    background-color: rgba(84, 81, 253);
+    color: rgba(256, 256, 256, 0.7);
+    border: 0;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+    width: 35%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-confirmar:hover {
+    transition: all .3s ease;
+    background-color: rgba(255, 78, 0);
+}
+
+.logo {
+    width: 40%;
+    margin: 25%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.redes-block {
+    padding: 50px;
+    float: left;
+    width: 0%;
+    justify-content: center;
+    /* The width is 20%, by default */
+}
+
+#redes {
+    padding-top: 60px;
+    font-size: 10ex;
+    color: rgb(84, 81, 253);
+}
+
+#redes:hover {
+    color: rgba(255, 78, 0);
+    ;
+}
+
+.block-avatar img {
+    position: static;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+}
+
+
+/* Use a media query to add a break point at 800px: */
+
+@media screen and (max-width: 800px) {
+    .menu-block,
+    .main,
+    .redes-block {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
