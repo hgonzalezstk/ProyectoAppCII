@@ -1,15 +1,14 @@
 'use strict'
 
-const botonReservacion = document.querySelector('#restaurantes');
+const botonReservacion = document.querySelector('#btn-reserva');
 const botonVegetariano = document.querySelector('#editar');
 const botonVegano = document.querySelector('#editar');
 const botonBocas = document.querySelector('#editar');
 const botonPostres = document.querySelector('#editar');
-const botonBebidas = document.querySelector('#editar');
 
 
-function linkReservaciones() {
-    location.replace('pnlRestaurantes.html'); // cambiar por la pagina real 
+const linkReservaciones = () => {
+    location.replace('register-reservation.html'); // cambiar por la pagina real 
 }
 
 function linkVegetariano() {
