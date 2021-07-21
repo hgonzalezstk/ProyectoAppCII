@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+.header-principal {
+    background: -webkit-linear-gradient(left, rgb(255, 78, 0), rgb(236, 159, 5));
+    padding: 15px;
+    width: 100%;
+    position: static;
+}
+
+.header-principal nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.header-principal nav a:hover {
+    color: rgb(84, 81, 253);
+}
+
+.header-principal .icono-menu {
+    display: none;
+}
+
+.footer-principal {
+    background-color: rgb(255, 78, 0);
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.footer-principal {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#logo-footer {
+    height: 30px;
+    align-self: center;
+}
+
+
+/*Para validaciones*/
+
+.error-input {
+    border: 2px solid rgb(228, 20, 20);
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de restaurante</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/general-media-query.css">
+    <link rel="stylesheet" href="../css/registroRestaurante.css">
+</head>
+
+<body>
+    <header id="header-principal" class="header-principal">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ubicaciones.html">Buscar restaurante</a>
+            <a href="reservaciones.html">Iniciar Sesión</a>
+            <a href="contacto.html">Registrarse</a>
+            <a href="inicio-sesion.html">Recuperar Contraseña</a>
+            <a href="contacto.html">FAQ</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="sct-contenedor-principal">
+            <form type="POST">
+                <h1>Registro de restaurante</h1>
+                <div id="div-principal">
+                    <div>
+                        <label for="txt-nombreGeneral">Nombre general:</label>
+                        <input type="text" id="txt-nombreGeneral" required>
+                    </div>
+                    <div>
+                        <label for="txt-nombreComercial">Nombre comercial:</label>
+                        <input type="text" id="txt-nombreComercial" required>
+                    </div>
+                    <div>
+                        <label for="txt-cedulaJuridica">Cédula jurídica:</label>
+                        <input type="text" id="txt-cedulaJuridica" placeholder="0-000-000000" required>
+                    </div>
+                    <div>
+                        <label for="txt-telefono">Telefono:</label>
+                        <input type="text" id="txt-telefono" placeholder="00000000" required>
+                    </div>
+                    <div>
+                        <label for="txt-telefono2">Telefono 2:</label>
+                        <input type="text" id="txt-telefono2" placeholder="00000000" required>
+                    </div>
+                    <div>
+                        <label for="txt-correo">Correo electrónico:</label>
+                        <input type="email" id="txt-correo" required>
+                    </div>
+                    <div>
+                        <label for="txt-capacidadMax">Capacidad máxima:</label>
+                        <input type="text" id="txt-capacidadMax" required>
+                    </div>
+                    <div>
+                        <label for="txt-aforo">Aforo permitido:</label>
+                        <input type="text" id="txt-aforo" required>
+                    </div>
+                    <div>
+                        <h3>Horario para el día lunes</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="lunes-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="lunes-cierre" required>
+                    </div>
+                    <div>
+                        <h3>Horario para el día martes</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="martes-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="martes-cierre" required>
+                    </div>
+                    <div>
+                        <h3>Horario para el día miércoles</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="miercoles-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="miercoles-cierre" required>
+                    </div>
+                    <div>
+                        <h3>Horario para el día jueves</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="jueves-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="jueves-cierre" required>
+                    </div>
+                    <div>
+                        <h3>Horario para el día viernes</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="viernes-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="viernes-cierre" required>
+                    </div>
+                    <div>
+                        <h3>Horario para el día sábado</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="sabado-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="sabado-cierre" required>
+                    </div>
+                    <div>
+                        <h3>Horario para el día domingo</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="domingo-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="domingo-cierre" required>
+                    </div>
+                    <div>
+                        <h3>Horario para feriados y especiales</h3>
+                        <label>Apertura:</label>
+                        <input type="time" id="especiales-apertura" required>
+                        <label>Cierre:</label>
+                        <input type="time" id="especiales-cierre" required>
+                    </div>
+                    <div>
+                        <label for="slct-provincia">Provincia:</label>
+                        <select id="slct-provincia">
+                        <option value="alajuela">Alajuela</option>
+                        <option value="cartago">Cartago</option>
+                        <option value="guanacaste">Guanacaste</option>
+                        <option value="heredia">Heredia</option>
+                        <option value="limon">Limón</option>
+                        <option value="puntarenas">Puntarenas</option>
+                        <option value="sj">San José</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="slct-canton">Cantón:</label>
+                        <select id="slct-canton">
+                        <option value="1">Alajuela</option>
+                        <option value="2">Atenas</option>
+                        <option value="3">Grecia</option>
+                        <option value="4">Guatuso</option>
+                        <option value="6">Los Chiles</option>
+                        <option value="6">Naranjo</option>
+                        <option value="7">Orotina</option>
+                        <option value="8">Palmares</option>
+                        <option value="9">Poás</option>
+                        <option value="10">Río Cuarto</option>
+                        <option value="11">San Carlos</option>
+                        <option value="12">San Mateo</option>
+                        <option value="13">San Ramón</option>
+                        <option value="14">Sarchí</option>
+                        <option value="15">Upala</option>
+                        <option value="16">Zarcero</option>
+                    </select>
+
+                    </div>
+                    <div>
+                        <label for="slct-distrito">Distrito:</label>
+                        <select id="slct-distrito">
+                            <option value="1">Alajuela</option>
+                            <option value="2">Carrizal</option>
+                            <option value="3">Desamparados</option>
+                            <option value="4">Garita</option>
+                            <option value="6">Guácima</option>
+                            <option value="6">Río Segundo</option>
+                            <option value="7">Sabanilla</option>
+                            <option value="8">San Antonio</option>
+                            <option value="9">San Isidro</option>
+                            <option value="10">San José</option>
+                            <option value="11">San Rafael</option>
+                            <option value="12">Sarapiquí</option>
+                            <option value="13">Tambor</option>
+                            <option value="14">Turrúcares</option>
+                    </select>
+                    </div>
+                    <div class="textarea-container">
+                        <label for="txta-senhas">Señas específicas:</label>
+                        <textarea id="txta-senhas" required></textarea>
+                    </div>
+                    <div>
+                        <h3>Ubicación en coordenadas geográficas</h3>
+                        <label>Latitud:</label>
+                        <input type="number" id="txt-latitud" required>
+                        <label>Longitud:</label>
+                        <input type="number" id="txt-longitud" required>
+                    </div>
+                    <div class="input-upload">
+                        <input type="file" id="file" class="file">
+                        <label for="file" id="btn-cargar">Subir foto de perfil</label>
+                    </div>
+                    <div>
+                        <label for="lnk-fb">Facebook (opcional):</label>
+                        <input type="url" name="lnk-fb" id="lnk-fb">
+                    </div>
+                    <div>
+                        <label for="lnk-insta">Instagram (opcional):</label>
+                        <input type="url" name="lnk-insta" id="lnk-insta">
+                    </div>
+                    <div>
+                        <label for="lnk-twtr">Twitter (opcional):</label>
+                        <input type="url" name="lnk-twtr" id="lnk-twtr">
+                    </div>
+                    <div class="sct-continuar">
+                        <button type="button" id="btn-continuar">Continuar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-principal">
+        <img id="logo-footer" src="../imgs/logo-blanco.png" alt="q'Gato Studio blanco">
+        <address>San José, Costa Rica</address>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/controlador-general.js"></script>
+    <script src="../js/registroRestaurante.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil restaurante</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/general-media-query.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/perfilRestaurante.css">
+</head>
+
+<body>
+    <header id="header-principal" class="header-principal">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ubicaciones.html">Buscar restaurante</a>
+            <a href="reservaciones.html">Iniciar Sesión</a>
+            <a href="contacto.html">Registrarse</a>
+            <a href="inicio-sesion.html">Recuperar Contraseña</a>
+            <a href="contacto.html">FAQ</a>
+            <a href="contacto.html">Contacto</a>
+            <a class="icono-menu" onclick="cambiar_estilo_navegacion();">☰</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section id="sct-aside">
+            <aside>
+                <div id="foto-restaurante">
+                    <img src="../imgs/restFrente.jpg" width="150" alt="favicon">
+                </div>
+                <div id="">
+                    <button type="button" id="btn-reserva">Hacer reservación</button>
+                </div>
+                <div class="info">
+                    <p>Horario del dia de hoy<br><br>Apertura: 11:00 am<br><br>Cierre: 11:00 pm</p>
+                </div>
+                <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.004501314248!2d-84.2160589846303!3d10.016486092839841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9da209ddacd%3A0xea935b084348c8d4!2sMiski%20Per%C3%BA!5e0!3m2!1ses!2scr!4v1626811305160!5m2!1ses!2scr"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="info">
+                    <p>Capacidad máxima: 40 personas<br><br> Aforo: 15 personas</p>
+                </div>
+                <div class="info">
+                    <p>Telefono: 24513454<br><br> Email: info@lospatitos.com</p>
+                </div>
+                <div id="info-gerente">
+                    <div>
+                        <img src="../imgs/gerenteRest3.jpg" alt="gerente" id="foto-gerente">
+                    </div>
+                    <div>
+                        <p>Gerente: Daniela Núñez</p>
+                    </div>
+                </div>
+                <div id="social-media">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                </div>
+            </aside>
+        </section>
+        <section id="sct-contenedor-titulo">
+            <div>
+                <h1>Miski Perú</h1>
+                <div>
+                    <img src="../imgs/forkFilled.png" alt="Calificacion 1" class="calificacion">
+                    <img src="../imgs/forkFilled.png" alt="Calificacion 2" class="calificacion">
+                    <img src="../imgs/forkFilled.png" alt="Calificacion 3" class="calificacion">
+                    <img src="../imgs/forkFilled.png" alt="Calificacion 4" class="calificacion">
+                    <img src="../imgs/forkEmpty.png" alt="Calificacion 5" class="calificacion">
+                </div>
+            </div>
+        </section>
+        <section id="sct-menus">
+            <div class="btn">
+                <button type="button" class="btn-menu">Menú vegetariano</button>
+            </div>
+            <div id="img-vegetariano"></div>
+            <div id="img-vegano"></div>
+            <div class="btn">
+                <button type="button" class="btn-menu">Menú vegano</button>
+            </div>
+            <div class="btn">
+                <button type="button" class="btn-menu">Menú de bocas</button>
+            </div>
+            <div id="img-bocas"></div>
+            <div id="img-postres"></div>
+            <div class="btn">
+                <button type="button" class="btn-menu">Menú de postres</button>
+            </div>
+            <div class="btn">
+                <button type="button" class="btn-menu">Menú de bebidas</button>
+            </div>
+            <div id="img-bebidas"></div>
+        </section>
+    </main>
+    <footer class="footer-principal">
+        <img id="logo-footer" src="../imgs/logo-blanco.png" alt="q'Gato Studio blanco">
+        <address>San José, Costa Rica</address>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/perfilRestaurante.js"></script>
+    <script src="../js/controlador-general.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel de dueños</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/general-media-query.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/panelDuenhos.css">
+</head>
+
+<body>
+    <header id="header-principal" class="header-principal">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ubicaciones.html">Buscar restaurante</a>
+            <a href="reservaciones.html">Iniciar Sesión</a>
+            <a href="contacto.html">Registrarse</a>
+            <a href="inicio-sesion.html">Recuperar Contraseña</a>
+            <a href="contacto.html">FAQ</a>
+            <a href="contacto.html">Contacto</a>
+            <a class="icono-menu" onclick="cambiar_estilo_navegacion();">☰</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section>
+            <h1>Panel de control de restaurantes</h1>
+        </section>
+        <section id="sct-buscar">
+            <label for="myInput">Buscar:</label>
+            <input type="text" id="myInput" onkeyup="buscar()">
+        </section>
+        <section>
+            <aside id="asd-botones">
+                <div>
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                    <input type="button" value="Editar" class="boton">
+                </div>
+                <div>
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                    <input type="button" value="Eliminar" class="boton">
+                </div>
+            </aside>
+        </section>
+        <section>
+            <table id="myTable">
+                <caption>Ordenar por:</caption>
+                <tr>
+                    <th onclick="sortTable(0)">Nombre Comercial</th>
+                    <th onclick="sortTable(1)">Nombre General</th>
+                    <th onclick="sortTable(2)">Gerente</th>
+                    <th onclick="sortTable(3)">Ubicación</th>
+                    <th onclick="sortTable(4)">Calificación</th>
+                </tr>
+                <tr>
+                    <td>Los Patitos S.A.</td>
+                    <td>Los Patitos</td>
+                    <td>Oliver Aguado Rodriguez</td>
+                    <td>Alajuela</td>
+                    <td>3.3</td>
+                </tr>
+                <tr>
+                    <td>Le'cuak S.A.</td>
+                    <td>L'Ile de France</td>
+                    <td>Coral Santos Montaño</td>
+                    <td>San José</td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td>SoloPlata Ltda.</td>
+                    <td>La Divina Comida</td>
+                    <td>Luis Castillo Batista</td>
+                    <td>Escazú</td>
+                    <td>4.8</td>
+                </tr>
+                <tr>
+                    <td>SoloOro Ltd.</td>
+                    <td>Raw Co Juicery & Food</td>
+                    <td>Merced Balbina Raya</td>
+                    <td>Escazú</td>
+                    <td>4.2</td>
+                </tr>
+                <tr>
+                    <td>LaPifia S.A.</td>
+                    <td>Soda Tala</td>
+                    <td>Alexander Montenegro Duque</td>
+                    <td>Guanacaste</td>
+                    <td>4.7</td>
+                </tr>
+                <tr>
+                    <td>LaCarnita Ltda.</td>
+                    <td>Furca</td>
+                    <td>Pamela Leiva Soto</td>
+                    <td>Rohrmoser</td>
+                    <td>4.9</td>
+                </tr>
+                <tr>
+                    <td>Piolín S.A.</td>
+                    <td>Silvestre</td>
+                    <td>Catalina Cabanillas Vicente</td>
+                    <td>Barrio Amón</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>AlHp Ltda.</td>
+                    <td>La Esquina de Buenos Aires</td>
+                    <td>Manolo De La Cruz Camaño</td>
+                    <td>San José</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>YaMeCansé S.A.</td>
+                    <td>La Leda</td>
+                    <td>Serafin Valcarcel Palacios</td>
+                    <td>Caldera</td>
+                    <td>4.5</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <div id="btns-AS">
+                <a href="#" id="previous" class="btn-as">&laquo; Anterior</a>
+                <a href="#" id="next" class="btn-as">Siguiente &raquo;</a>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer-principal">
+        <img id="logo-footer" src="../imgs/logo-blanco.png" alt="q'Gato Studio blanco">
+        <address>San José, Costa Rica</address>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/pnlDuenhos.js"></script>
+    <script src="../js/controlador-general.js"></script>
+</body>
+
+</html>

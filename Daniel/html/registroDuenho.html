@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de dueños</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/general-media-query.css">
+    <link rel="stylesheet" href="../css/registroDuenho.css">
+</head>
+
+<body>
+    <header id="header-principal" class="header-principal">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ubicaciones.html">Buscar restaurante</a>
+            <a href="reservaciones.html">Iniciar Sesión</a>
+            <a href="contacto.html">Registrarse</a>
+            <a href="inicio-sesion.html">Recuperar Contraseña</a>
+            <a href="contacto.html">FAQ</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="sct-contenedor-principal">
+            <form>
+                <h1>Registro de dueños</h1>
+                <div id="div-principal">
+                    <div>
+                        <label for="txt-nombre">Nombre:</label>
+                        <input type="text" id="txt-nombre" required>
+                    </div>
+                    <div>
+                        <label for="txt-apellidos">Apellidos:</label>
+                        <input type="text" id="txt-apellidos" required>
+                    </div>
+                    <div>
+                        <label for="txt-cedula">Identificación:</label>
+                        <input type="text" id="txt-cedula" placeholder="00-0000-0000" required>
+                    </div>
+                    <div>
+                        <label for="txt-correo">Correo electrónico:</label>
+                        <input type="email" id="txt-correo" required>
+                    </div>
+                    <div>
+                        <label for="txt-contrasenha">Contraseña:</label>
+                        <input type="text" id="txt-contrasenha" required>
+                    </div>
+                    <div>
+                        <label for="txt-contrasenha2">Verificar contraseña:</label>
+                        <input type="text" id="txt-contrasenha2" required>
+                    </div>
+                    <div class="input-upload">
+                        <input type="file" id="file" class="file" required>
+                        <label for="file" id="btn-cargar">Subir foto de perfil</label>
+                    </div>
+                    <div>
+                        <button type="button" id="btn-registrar">Registrarse</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-principal">
+        <img id="logo-footer" src="../imgs/logo-blanco.png" alt="q'Gato Studio blanco">
+        <address>San José, Costa Rica</address>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/controlador-general.js"></script>
+    <script src="../js/registroDuenho.js"></script>
+
+</body>
+
+</html>
