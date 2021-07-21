@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/opinion-imagen-2.jpg);
+}
+
+.background-opinion {
+    background-color: whitesmoke;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 480px;
+    margin-top: 180px;
+    padding-top: 1px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+}
+
+.flex-wrapper {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(255, 78, 0)
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(84, 81, 253);
+}
+
+p {
+    font-size: 14px;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin: 60px;
+    font-size: 40px;
+}
+
+.container-1 {
+    width: 30%;
+    text-align: center;
+}
+
+.container-2 {
+    width: 50%;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 300px;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 78, 0);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(84, 81, 253);
+}
+
+button:active {
+    background-color: green;
+}
+
+.error-input {
+    border: 2px solid rgb(228, 20, 20);
+}
