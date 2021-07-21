@@ -73,11 +73,11 @@
                 <caption>Ordenar por:</caption>
                 <tr>
 
-                    <th onclick="sortTable(1)">Fecha</th>
-                    <th onclick="sortTable(2)">Hora</th>
-                    <th onclick="sortTable(3)">Pedido</th>
-                    <th onclick="sortTable(4)">A nombre de</th>
-                    <th onclick="sortTable(4)">Estado</th>
+                    <th id="pedidos-fecha" onclick="sortTable(1)">Fecha</th>
+                    <th id="pedidos-hora" onclick="sortTable(2)">Hora</th>
+                    <th id="pedidos-pedido" onclick="sortTable(3)">Pedido</th>
+                    <th id="pedidos-nombre" onclick="sortTable(4)">A nombre de</th>
+                    <th id="pedidos-estado" onclick="sortTable(4)">Estado</th>
                 </tr>
                 <tr>
 
@@ -168,7 +168,9 @@
         <address>San José, Costa Rica</address>
     </footer>
 
-    <script src="../js/app.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/reportes.js"></script>
+
 </body>
 
 </html>
