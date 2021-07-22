@@ -97,7 +97,8 @@ const validarDatos = () => {
             text: 'Por favor revise los campos resaltados en rojo'
         });
     } else {
-        obtenerDatos()
+        obtenerDatos();
+        location.replace('../html/registro_gerente.html');
     }
 }
 const validar_vacios = () => {

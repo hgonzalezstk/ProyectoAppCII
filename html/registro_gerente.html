@@ -8,6 +8,7 @@
     <title>Registro de gerente</title>
 
     <link rel="stylesheet" href="../css/registro_gerente.css">
+    <link rel="stylesheet" href="..//css/general.css">
 
 </head>
 
@@ -22,21 +23,21 @@
 
         <div>
             <label for="txt-nombre">Nombre</label>
-            <input type="text" id="txt-nombre">
+            <input type="text" id="txt-nombre" required>
         </div>
 
         <br/>
 
         <div>
             <label for="txt-apellidos">Apellidos</label>
-            <input type="text" id="txt-apellidos">
+            <input type="text" id="txt-apellidos" required>
         </div>
 
         <br/>
 
         <div>
             <label for="txt-restaurante">Restaurante</label>
-            <input type="text" id="txt-restaurante">
+            <input type="text" id="txt-restaurante" required>
         </div>
 
         <br/>
@@ -48,23 +49,23 @@
 
         <br/>
 
-        <div>
+        <div required>
             <label type="checkbox" name="lenguaje" value="terminos y condiciones">Acepto los términos y condiciones
-            <input type="checkbox" id="checkbox" required>
+            <input type="checkbox" required  id="checkbox" >
 
         </div>
 
         <br/>
 
         <div>
-            <button type="button" onclick="registration()">Registrarse</button>
+            <button type="button" id="btn-registro" onclick="registration()">Registrarse</button>
         </div>
 
         <br/>
 
         <div>
             <p>¿Ya tiene una cuenta registrada?</p>
-            <p>Inicie sesión <a href="#">aquí</a></p>
+            <p>Inicie sesión <a href="pnl_login.html">aquí</a></p>
         </div>
 
 

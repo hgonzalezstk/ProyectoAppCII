@@ -4,15 +4,19 @@
 //MENU NAV
 const openMenu = document.querySelector('#show-menu')
 const hideMenuIcon = document.querySelector('#hide-menu')
-const sideMenu = document.querySelector('#nav-menu')
+const sideMenu = document.querySelector('#nav-menu');
 
-openMenu.addEventListener('click', function() {
-    sideMenu.classList.add('active')
-})
+// openMenu.addEventListener('click', function() {
+//     sideMenu.classList.add('active')
+// })
 
-hideMenuIcon.addEventListener('click', function() {
-    sideMenu.classList.remove('active')
-})
+const validar = () => {
+    location.replace('../html/perfilDuenho.html');
+}
+
+// hideMenuIcon.addEventListener('click', function() {
+//     sideMenu.classList.remove('active')
+// })
 
 //Referencia de los campos HTMLs. (Elementos como tal, no su valor)
 const input_nombre = document.querySelector('#login-email');
@@ -24,7 +28,7 @@ const obtenerDatos = () => {
     console.log(`La contraseña es: ${input_contrasenna.value}`);
 };
 
-boton_ingresar.addEventListener('click', obtenerDatos);
+boton_ingresar.addEventListener('click', validar);
 
 //REPORTE DE GANANCIAS
 

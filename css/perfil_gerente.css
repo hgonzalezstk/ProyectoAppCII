@@ -11,6 +11,10 @@ Blue: 84,81,253
     padding: 0;
 }
 
+main {
+    padding: 20px;
+}
+
 .sct-pedidos {
     color: rgb(255, 78, 0);
     font-size: 20px;

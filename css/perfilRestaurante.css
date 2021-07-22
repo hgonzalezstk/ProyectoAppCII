@@ -191,3 +191,13 @@ h1 {
 #sct-menus {
     display: flow-root;
 }
+
+#info-gerente a {
+    color: rgb(255, 78, 0);
+    border-radius: 5px;
+    border: solid rgb(236, 159, 5);
+    background-size: cover;
+    background-color: rgb(241, 242, 246);
+    margin: 80px 50px;
+    padding: 80px 50px;
+}
