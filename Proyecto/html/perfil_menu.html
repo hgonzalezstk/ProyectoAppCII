@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Menu</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/perfil_menu.css">
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+
+<body>
+
+    <header id="header-principal" class="header-principal">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ubicaciones.html">Buscar restaurante</a>
+            <a href="reservaciones.html">Iniciar Sesión</a>
+            <a href="contacto.html">Registrarse</a>
+            <a href="inicio-sesion.html">Recuperar Contraseña</a>
+            <a href="contacto.html">FAQ</a>
+            <a href="contacto.html">Contacto</a>
+            <a class="icono-menu" onclick="cambiar_estilo_navegacion();">☰</a>
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+
+        <div class="fotografia">
+
+            <div class="subtitulo-imagen">
+                <h2>Ingresa una imagen de tu menu</h2>
+            </div>
+
+            <div class="imagen-menu">
+                <img src="../img/imagen-perfil-menu.jpg" width="250px" height="250px">
+            </div>
+
+            <div class="imagen-link">
+                <label for="imagen"></label>
+                <input type="file" id="imagen-link" name="imagen-link" accept="image/png, image/jpeg">
+            </div>
+
+        </div>
+
+        <div class="caracteristicas">
+
+            <div class="titulo-menu">
+
+                <h1> Nombre del Menú</h1>
+
+            </div>
+
+            <div>
+                <h2>Características</h2>
+            </div>
+
+            <form onsubmit="return false">
+
+                <div>
+                    <label for="Carateristicas"></label>
+                    <textarea name="Caracteristicas" id="Caracteristicas-menu" required></textarea>
+                </div>
+
+                <button id="boton-reset" type="reset">Borrar</button>
+
+                <button id="boton-confirmar" type="submit">Confirmar</button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer class="footer-principal">
+        <img id="logo-footer" src="../img/logo-blanco.png" alt="q'Gato Studio blanco">
+        <address>San José, Costa Rica</address>
+    </footer>
+
+</body>
+
+</html>

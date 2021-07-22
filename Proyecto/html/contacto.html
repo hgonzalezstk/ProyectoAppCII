@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contáctenos </title>
+    <link rel="stylesheet" type="text/css" href="../css/contacto.css">
+</head>
+
+<body>
+    <form onsubmit="return false">
+        <div id="contacto">
+            <h1> Contáctenos </h1>
+        </div>
+
+        <div id="tabla-formulario">
+            <label for="nombre">Nombre</label>
+            <input placeholder="Ingrese su nombre" type="text" id="tabla">
+
+            <label for="apellido">Apellidos</label>
+            <input placeholder="Ingrese sus apellidos" id="fapellido" type="text">
+
+            <label for="correo">Correo electrónico (*) </label>
+            <input placeholder="Escriba su correo electrónico" id="femail" type="text">
+
+            <label for="tipo">Tipo de usuario (*) </label>
+            <input placeholder="Restaurante o Cliente" id="ffechanacimiento" type="text">
+
+            <label for="consulta">¿Cómo le podemos ayudar?</label>
+            <input placeholder="Escriba su consulta" id="fconsulta" type="text">
+        </div>
+
+        <button name="enviar" type="submit" id="button"> ¡Enviar! </button>
+
+    </form>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+
+</html>
