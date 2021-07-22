@@ -1,12 +1,12 @@
 #contacto {
     font-family: sans-serif;
-    background: #205ab4;
+    background: rgb(255, 78, 0);
     color: white;
     padding: 5px;
     text-align: center;
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
-    border-bottom: 5px solid #205ab4;
+    border-bottom: 5px solid rgb(255, 78, 0);
     margin-bottom: 5px;
 }
 
@@ -47,9 +47,11 @@ input:focus {
     background-color: #F2F2F2;
 }
 
-.main-wrapper {
+body {
     background-image: url(../media/imgs/contacto-imagen-3.jpg);
-    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1920px 1920px;
 }
 
 #button {
@@ -72,4 +74,8 @@ input:focus {
 
 #button:hover {
     background-color: #7FACDE;
+}
+
+.error-input {
+    border: 2px solid rgb(228, 20, 20);
 }

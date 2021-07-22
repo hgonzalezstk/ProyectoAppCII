@@ -10,16 +10,17 @@ html {
     background: -webkit-linear-gradient(left, rgb(255, 78, 0), rgb(236, 159, 5));
     padding: 15px;
     width: 100%;
+    position: static;
 }
 
-s .header-principal nav a {
+.header-principal nav a {
     color: #ffffff;
     text-decoration: none;
     margin-right: 20px;
 }
 
 .header-principal nav a:hover {
-    color: rgb(239, 239, 245);
+    color: rgb(84, 81, 253);
 }
 
 .header-principal .icono-menu {
@@ -47,6 +48,185 @@ s .header-principal nav a {
 
 
 /*Para validaciones*/
+
+.error-input {
+    border: 2px solid rgb(228, 20, 20);
+}
+
+
+/*-----------------NAV BAR-----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+/*-----------------NAV HORIZONTAL-----------------*/
+
+#navbar {
+    background: -webkit-linear-gradient(left, rgb(255, 78, 0), rgb(236, 159, 5));
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 40px 0;
+}
+
+
+/*-----------------HAMBURGER MENU ICON-----------------*/
+
+.hamb-menu {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+/*-----------------NAV VERTICAL-----------------*/
+
+#nav-menu {
+    background-color: rgb(255, 78, 0);
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+
+#nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: start;
+    list-style: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+#navbar img {
+    width: 47px;
+    height: 55px;
+    margin: 45%;
+}
+
+#navbar-toggle a img {
+    width: 47px;
+    height: 55px;
+    margin: 55px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.nav-text:hover {
+    background-color: #ec9f05;
+    cursor: pointer;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+
+/*-----------------ICONOS EN EL MENU-----------------*/
+
+.nav-icon {
+    padding-right: 1rem;
+    color: rgb(250, 250, 250);
+}
+
+
+/*-----------------PARTE DE ARRIBA DEL NAV-----------------*/
+
+#navbar-toggle {
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#navbar-toggle h1 {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+}
+
+#navbar-toggle a {
+    text-decoration: none;
+}
+
+.fa-bars {
+    color: aliceblue;
+}
+
+.sct-nav {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*-----------------GENERALIDADES-----------------*/
+
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.btn-form {
+    background-color: #5451fd;
+    border-color: rgb(84, 81, 253);
+    color: white;
+    border-radius: 5px;
+    margin: 15px auto 5px auto;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*-----------------FOOTER-----------------*/
+
+.footer-principal {
+    background-color: #ff4e00;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#logo-footer {
+    height: 30px;
+    align-self: center;
+}
+
+
+/*-----------------Para validaciones-----------------*/
 
 .error-input {
     border: 2px solid rgb(228, 20, 20);
