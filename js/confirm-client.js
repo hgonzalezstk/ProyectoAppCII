@@ -93,7 +93,7 @@ const validarDatos = () => {
         almacenarDatos();
         crearCuenta();
         limpiar();
-        location.replace('../html/perfil-cliente.html');
+        location.replace('../html/profile-client.html');
     }
 }
 

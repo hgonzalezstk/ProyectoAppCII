@@ -65,6 +65,7 @@ const validarDatos = () => {
         });
     } else {
         obtenerDatos()
+        location.replace('../html/perfilDuenho.html');
     }
 }
 const obtenerDatos = () => {

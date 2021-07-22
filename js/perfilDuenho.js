@@ -3,7 +3,7 @@
 const botonPnlRestaurantes = document.querySelector('#restaurantes');
 const botonEditar = document.querySelector('#editar');
 
-function linkPnlRestaurantes() {
+const linkPnlRestaurantes = () => {
     location.replace('pnlRestaurantes.html'); // cambiar por la pagina real 
 }
 
@@ -12,4 +12,4 @@ function linkEditarPerfil() {
 }
 
 botonPnlRestaurantes.addEventListener('click', linkPnlRestaurantes);
-botonEditar.addEventListener('click', linkEditarPerfil);
+// botonEditar.addEventListener('click', linkEditarPerfil);
